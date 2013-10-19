@@ -1,95 +1,374 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>DayZ Epoch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="American Day X Project" />
+    <!-- CSS -->
+    <script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) { var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/abv=1309062649/"},atok:"40ceb5ce6e218665a6934a1a6094a241",petok:"4a53ef07c73f908b50c50587781d3d0c-1382203082-1800",zone:"dayzepoch.com",rocket:"0",apps:{}}];CloudFlare.push({"apps":{"ape":"cf95cdb38a4342de777dec67251f9306"}});var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src="//ajax.cloudflare.com/cdn-cgi/nexp/abv=3224043168/cloudflare.min.js";b.parentNode.insertBefore(a,b);}}catch(e){};
+//]]>
+</script>
+<link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+            /* Sticky footer styles
+            -------------------------------------------------- */
 
-    <title>American Day X Podagorsk</title>
-  </head>
+        html,
+        body {
+            height: 100%;
+            /* The html and body elements cannot have any padding or margin. */
+            background: #000 url(bg.jpg) no-repeat center 0;
+        }
 
-  <body>
+            /* Wrapper for page content to push down footer */
+        #wrap {
+            min-height: 100%;
+            height: auto !important;
+            height: 100%;
+            /* Negative indent footer by it's height */
+            margin: 0 auto -60px;
+        }
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ADXTeam/DayZADX">На GitHub</a>
+            /* Set the fixed height of the footer here */
+        #push,
+        #footer {
+            height: 60px;
+        }
 
-          <h1 id="project_title">American Day X Podagorsk</h1>
-          <h2 id="project_tagline">Unofficial DayZ Mod... More FPS... More Stable...</h2>
+        #footer {
+            background-color: #f5f5f5;
+        }
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/ADXTeam/DayZADX/zipball/master">Скачать архив в .zip формате</a>
-              <a class="tar_download_link" href="https://github.com/ADXTeam/DayZADX/tarball/master">Скачать архив в tar.gz формате</a>
-            </section>
-        </header>
+            /* Lastly, apply responsive CSS fixes as necessary */
+        @media (max-width: 767px) {
+            #footer {
+                margin-left: -20px;
+                margin-right: -20px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
+            /* Custom page CSS
+            -------------------------------------------------- */
+            /* Not required for template or sticky footer method. */
+
+        .container {
+            width: auto;
+            max-width: 680px;
+        }
+
+        .container .credit {
+            margin: 20px 0;
+        }
+
+    </style>
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="/bootstrap/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/bootstrap/ico/apple-touch-icon-57-precomposed.png">
+	
+	<script type="text/javascript">
+var _cdj = _cdj || [];
+_cdj.push(['_setAccount', 14462]);
+_cdj.push(['_init']);
+document.write('<scr'+'ipt src="'+document.location.protocol+'//dssja7qsifeak.cloudfront.net/experimently.js"></scr'+'ipt>');
+</script>
+</head>
+
+<body>
+
+
+<!-- Part 1: Wrap all page content here -->
+<div id="wrap">
+
+<!-- Begin page content -->
+<div class="container">
+<div class="well">
+    <div class="page-header">
+        <img src="dayz_epoch_logo.png" alt="DayZ Epoch"> 
+			<a class="btn btn-inverse" href="https://github.com/vbawol/DayZ-Epoch">Source</a> 
+			<a class="btn btn-inverse" href="https://github.com/vbawol/DayZhiveEpoch">DLL Source</a>
+			<a class="btn btn-inverse" href="https://github.com/vbawol/DayZ-Epoch/issues">Report Issue</a>
+		
+			<a class="btn btn-inverse" href="http://dayzepoch.com/wiki">Wiki</a>
+			<a class="btn btn-inverse" href="http://dayzepoch.com/forum">Forum</a>
+			<a class="btn btn-inverse" href="https://twitter.com/DayZEpoch">Twitter</a><br/>
+
+			DayZ Epoch is a open source client and server mod based on DayZ Community Edition. DayZ Epoch mod
+			brings more RP to DayZ with; Metals based economy, NPC Traders, Lockable Vaults, More roles, and more.
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D0%B5%D0%BC-%D0%BD%D0%B0-%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B5-github-adx-project" class="anchor" href="#%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D0%B5%D0%BC-%D0%BD%D0%B0-%D0%BE%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B5-github-adx-project"><span class="octicon octicon-link"></span></a>Приветствуем на официальной странице GitHub ADX Project.</h3>
+</div>
 
-<p>Данный проект включает в себя много нового и интересного, а так<br>
-же увеличенный фпс доставит радость играть на нем.</p>
 
-<h3>
-<a name="%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9" class="anchor" href="#%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9"><span class="octicon octicon-link"></span></a>Список изменений</h3>
 
-<p>Будет дополнен</p>
+<div class="well">
 
-<h3>
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#install" data-toggle="tab">Installation | Download</a></li>
+        <li><a href="#servers" data-toggle="tab">Servers</a></li>
+		<li><a href="#community_servers" data-toggle="tab">Community Servers</a></li>
+		<li><a href="#teamspeak" data-toggle="tab">Public Teamspeak</a></li> 		
+    </ul>
 
-<h3>
-<a name="%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9" class="anchor" href="#%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9"><span class="octicon octicon-link"></span></a>Нашел баг?</h3>
+    <div class="tab-content">
+        <div class="tab-pane active" id="home">
 
-<p><a href="https://github.com/ADXTeam/DayZADX/issues">Все сюда</a><br>
-  
-</p>
+            <h1>DayZ Epoch</h1>
 
-<h3>
-<a name="%D0%A5%D0%BE%D1%82%D0%B8%D1%82%D0%B5-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9-%D0%B8%D0%BB%D0%B8-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B2" class="anchor" href="#%D0%A5%D0%BE%D1%82%D0%B8%D1%82%D0%B5-%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%B5-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D0%B5%D0%B9-%D0%B8%D0%BB%D0%B8-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%B2"><span class="octicon octicon-link"></span></a>Хотите больше возможностей или скриптов?*</h3>
+            <p>DayZ Epoch is set in a future time after the Great Infection. Humanity is slowly returning to the wasteland, industrious survivors have begun to join together in small groups and rebuild society. Small camps of merchants have started to pop up to do business with survivors who collect goods from the wasted remnants of civilization. Wholesalers have landed on the shores offering imported goods to aid the rebuilding effort.</p>
+            <p>All is not safe however some vestiges of infection still remain and rogue bandits still roam the countryside preying on unsuspecting survivors.</p>
+            <p>Survive, explore, build wealth, make your way through the harsh environment and assist in the effort to rebuild, or burn it all down its your choice, live in the Epoch.</p>
 
-<p>Напишите в один из ниже приведенных контакто в пометкой --&gt;&gt; "Нужна помощь в скриптинге"<br>
-В зависимости от работы мы скажем примерную сумму за которую мы поможем осуществить вашу идею.</p>
+            <h2>Current Client Build: v1.0.2.4</h2>
 
-<h3>
-<a name="%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B" class="anchor" href="#%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B"><span class="octicon octicon-link"></span></a>Контакты</h3>
+            <div>
+                <small>(Based on DayZ CE) <br/>
+                    UPDATED 10/14/2013
+                </small>
+            </div>
+            <br/>
+            <div>
+				
+                See <a href="http://dayzepoch.com/wiki/index.php/Main_Page#Epoch_key_Features">Wiki</a> for features.
+				<br/><br/>
+				
+				
+            </div>
+            <div>
 
-<p>Есть проблемы? вопросы или просто хотите помочь финансово развиваться проекту?<br>
-напишите в один из скайпов:<br>
-arc.dd (Нидерланды/Амстердам)<br>
-vlad_chas (Ростов-на-Дону/Россия)<br></p>
+            </div>
 
-<h3>
-<a name="%D0%9A%D0%BE%D0%BF%D0%B8%D1%80%D0%B0%D0%B9%D1%82%D1%8B-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0" class="anchor" href="#%D0%9A%D0%BE%D0%BF%D0%B8%D1%80%D0%B0%D0%B9%D1%82%D1%8B-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0"><span class="octicon octicon-link"></span></a>Копирайты проекта</h3>
+            <div><span style="font-weight: bold;">Included Custom Addons:</span><br/>
 
-<p><a href="https://www.dropbox.com/s/33hq4lcn9jicbgl/credits.txt">DayZ Mod Credits</a><br>
-<a href="https://www.dropbox.com/s/e211sowkt4063ks/ADX%20Mod%20Credits.txt">ADX Mod Credits</a><br>
-Весь контент предназначен только для ADX Podagorsk<br>
-Для возможности изменения/взятия в своем моде файлы ADX <br>
-свяжитесь с одним из контактов выше.<br></p>
+                <ul><li> AutoGyro - by CSJ <a rel="nofollow" class="external free" href="http://www.armaholic.com/page.php?id=2359">http://www.armaholic.com/page.php?id=2359</a>
+</li><li> Taxi by [GLT]Myke <a rel="nofollow" class="external free" href="http://www.armaholic.com/page.php?id=12289">http://www.armaholic.com/page.php?id=12289</a>
+</li><li> Sigisolda by Gnat <a rel="nofollow" class="external free" href="http://www.armaholic.com/page.php?id=13417">http://www.armaholic.com/page.php?id=13417</a>
+</li><li> Cessna 185 Skywagon by Gnat <a rel="nofollow" class="external free" href="http://www.armaholic.com/page.php?id=14785">http://www.armaholic.com/page.php?id=14785</a>
+</li><li> SUV Colors by Python.au <a rel="nofollow" class="external free" href="http://www.armaholic.com/page.php?id=17176">http://www.armaholic.com/page.php?id=17176</a>
+</li><li> R3F Realism by <a rel="nofollow" class="external free" href="http://www.team-r3f.org/">http://www.team-r3f.org/</a>
+</li><li> Modern Civilian vehicles by vilas <a rel="nofollow" class="external free" href="http://www.armaholic.com/page.php?id=17447">http://www.armaholic.com/page.php?id=17447</a>
+</li><li> ASC EU Lights Mod <a rel="nofollow" class="external free" href="http://www.armaholic.com/page.php?id=12076">http://www.armaholic.com/page.php?id=12076</a>
+</li><li> MAP Editorupgrade (EU) <a rel="nofollow" class="external free" href="http://www.armaholic.com/page.php?id=6194">http://www.armaholic.com/page.php?id=6194</a>
+</li><li> st_movement by ShackTac <a rel="nofollow" class="external free" href="https://dev-heaven.net/projects/shacktac/files">https://dev-heaven.net/projects/shacktac/files</a>
+</li><li> Jetski Yanahui by Kol9yN, Zakat, Gerasimow9, YuraPetrov, zGuba, A.Karagod, IceBreakr, Sahbazz
+</li><li> gdtmod_plants2 1.00 by HeinBloed http://www.gdt-server.net/
+</li><li> gdtmod_grass 1.00 by HeinBloed http://www.gdt-server.net/
+</li></ul>
+                
+            </div>
+            <div>
+            </div>
+            <div>
+				<div><h3>Developers:</h3>
+<ul><li> [VB]AWOL - Lead Developer - <a rel="nofollow" class="external free" href="http://www.twitch.tv/vbawol">http://www.twitch.tv/vbawol</a> - <a class="__cf_email__" href="http://www.cloudflare.com/email-protection" data-cfemail="54223635233b38142231203126353a36352720352630277a373b39">[email&nbsp;protected]</a><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+</script>
+</li><li> Paul Tomany - Models, Textures, Beta Tester. - <a class="__cf_email__" href="http://www.cloudflare.com/email-protection" data-cfemail="e191958e8c808f98a1868c80888dcf828e8c">[email&nbsp;protected]</a><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+</script>
+</li><li> Axle - Beta Tester, Trader City Designer, Ideas. - <a rel="nofollow" class="external free" href="http://www.twitch.tv/axles">http://www.twitch.tv/axles</a>
+</li><li> [VB]GREEN - Graphics, Beta Tester, Ideas. <a rel="nofollow" class="external free" href="http://www.twitch.tv/vbgreen">http://www.twitch.tv/vbgreen</a>
+</li><li> Axeman - Developer - Light system - <a class="__cf_email__" href="http://www.cloudflare.com/email-protection" data-cfemail="a0c1d8c5cdc1cee0d4c8c5c6d2c5c5dac5d28ec3cf8ed5cb">[email&nbsp;protected]</a><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+</script>
+</li><li> Zabn - Locked gear on vehicles when locked, reworked loot position code to support small items.
+</li></ul>
+					
+</div>
+<div><h3>Special Thanks to:</h3>
+   <ul><li> BIS for a incredible and versatile game and engine. <a rel="nofollow" class="external free" href="http://www.bistudio.com/">http://www.bistudio.com/</a>
+</li><li> Rocket - DAYZ! <a rel="nofollow" class="external free" href="http://dayzmod.com">http://dayzmod.com</a> | <a rel="nofollow" class="external free" href="http://dayzgame.com">http://dayzgame.com</a> 
+</li><li> DayZ Community Developers - <a rel="nofollow" class="external free" href="https://github.com/R4Z0R49/DayZMod">https://github.com/R4Z0R49/DayZMod</a> - <a rel="nofollow" class="external free" href="https://github.com/DayZMod">https://github.com/DayZMod</a>
+</li><li> ziellos2k - Tag Friendly code. <a rel="nofollow" class="external free" href="https://github.com/R4Z0R49/DayZMod/pull/232">https://github.com/R4Z0R49/DayZMod/pull/232</a>
+</li><li> Dayz Hive DLL - <a rel="nofollow" class="external free" href="https://github.com/rajkosto/hive">https://github.com/rajkosto/hive</a>
+</li><li> Maca134 - Improved Trader Menus, Death Message menu, Experimental hive 999 support - <a class="__cf_email__" href="http://www.cloudflare.com/email-protection" data-cfemail="f19c909290c0c2c5b1969c90989ddf929e9c">[email&nbsp;protected]</a><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l,b=document.getElementsByTagName("script");l=b[b.length-1].previousSibling;a=l.getAttribute('data-cfemail');if(a){s='';r=parseInt(a.substr(0,2),16);for(j=2;a.length-j;j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}s=document.createTextNode(s);l.parentNode.replaceChild(s,l);}}catch(e){}})();
+/* ]]> */
+</script>
+</li><li> aeinstein - Crafting now supports all can types. - <a rel="nofollow" class="external free" href="https://github.com/aeinstein">https://github.com/aeinstein</a>
+</li><li> OrangeSherbet - Beta Tester - <a rel="nofollow" class="external free" href="http://www.twitch.tv/orangesherbet">http://www.twitch.tv/orangesherbet</a>
+</li><li> Munchiefest - Beta Tester, Wiki Editor, Ideas - <a rel="nofollow" class="external free" href="http://www.twitch.tv/munchiefest">http://www.twitch.tv/munchiefest</a>
+</li><li> Alejandria - Beta Tester, New female textures. - <a rel="nofollow" class="external free" href="http://www.twitch.tv/miss_alejandria">http://www.twitch.tv/miss_alejandria</a>
+</li><li> QMGSaint - Beta Tester - Food Plate - <a rel="nofollow" class="external free" href="http://www.twitch.tv/qmgsaint">http://www.twitch.tv/qmgsaint</a>
+</li><li> Twitch.tv Streamers <a rel="nofollow" class="external free" href="http://www.twitch.tv/directory/game/DayZ">http://www.twitch.tv/directory/game/DayZ</a>
+</li><li> Thanks to all the other beta testers, you know who you are!
+</li></ul>
 
-<h3>
-<a name="%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80%D1%8B-%D1%82%D0%B5%D0%BC%D1%8B" class="anchor" href="#%D0%94%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B5%D1%80%D1%8B-%D1%82%D0%B5%D0%BC%D1%8B"><span class="octicon octicon-link"></span></a>Дизайнеры темы</h3>
+                </div>
+            </div>
 
-<p>GitHub</p>
-      </section>
+
+        </div>
+		<div class="tab-pane" id="teamspeak">
+		<h2>DayZ Epoch Public Teamspeak Server</h2>
+		<h2><a href="ts3server://ts3.dayzepoch.com">ts3.dayzepoch.com</a></h2>
+		</div>
+        <div class="tab-pane " id="whitelist">
+
+
+            <form class="form-signin" method="get" action="#whitelist">
+		<h2 class="form-signin-heading">Whitelist key</h2>
+		<p>Public whitelist not available at this time, if you have received a whitelist key enter it below.</p>
+		<div class="row">
+		  <div class="span4"><input type="text" name="key" class="input-block-level" placeholder="Whitelist Key"></div>
+		</div>
+		<button class="btn btn-large btn-success" type="submit">Redeem key</button>
+	  </form>
+				
+
+        </div>
+        <div class="tab-pane" id="community_servers">
+			<h3>Community run DayZ Epoch Servers</h3> 
+			
+			<h4><a href="http://dayzepoch.com/forum/index.php?/forum/18-public-dayz-epoch-servers/">Public DayZ Epoch Servers</a></h4>
+			<h4><a href="http://dayzepoch.com/forum/index.php?/forum/19-private-epoch-servers/">Private Epoch Servers</a></h4>
+			
+			<br/><br/>
+
+        </div>
+        <div class="tab-pane" id="servers">
+			
+			<h3><a href="http://dayzepoch.com/forum/index.php?/forum/31-official-dayzepochcom-server-listings/">Offical DayzEpoch Servers</a></h3>
+			
+			<h2>Want to be listed as official server?</h2>
+			To add your server to our official servers page you must abide by a few basic rules. Official server admins will receive extra help with server issues from the developers at no cost. Early access to new builds and access to development servers to beta test new features.
+<br/>
+<br/>
+1. No extra custom mods, vanilla epoch only.<br/>
+2. Server Admins may never spawn free gold or vehicles. (except in the case of compensation for reported bugs or server wide events.)<br/>
+3. Cannot drastically change vanilla epoch settings (i.e. 1000 vehicles)<br/>
+4. Server admins can enforce and should encourage RP-PVP.<br/>
+5. No PVP safe zones or trader city protections of any kind.<br/>
+<br/>
+<a href="http://dayzepoch.com/forum/index.php?/topic/389-want-to-be-listed-as-official-server/">If you agree, post here to request listing.</a>
+			<br/>
+			
+			
+        </div>
+        <div class="tab-pane" id="install">
+
+			<h1>Client Files:</h1>
+			MD5 Hash: 7ec7c7759065fef1ef2aef1a4f22c8ca <br/>
+			
+			Torrent Manual Client Install: <a href="http://goo.gl/9eX0W0">DayZ Epoch 1.0.2.4 Client Files</a><br/>
+			<br/>
+			
+			
+			Install DayZ Epoch with <a href="http://www.dayzcommander.com/">DayZ Commander</a><br/>
+
+			Install DayZ Epoch with <a href="http://play.withsix.com/mods/478-dayz_epoch">Play withSIX</a><br/>
+			
+			<h2>Manual Client install instructions:</h2> Simply extract using 7-zip @DayZ_Epoch folder into your "arma 2 operation arrowhead" folder then launch Arma2 OA with
+            "@DayZ_Epoch;" in your mod line.
+			<br/>
+			<br/>
+			<p>Disable chat mod for streamers Only:<br/>
+			<a rel="nofollow" class="external free" href="http://dayzepoch.com/ClientFiles/ra_chat_off_epoch.zip">http://dayzepoch.com/ClientFiles/ra_chat_off_epoch.zip</a></p>
+			
+			
+			<h1>Server Files:</h1>
+			MD5 Hash: ca084849a8c5449ebe8b8d5de8e90632 <br/>
+			Server: <a href="http://goo.gl/qGrRkS">DayZ Epoch 1.0.2.4 Server Files</a> <br/><br/>
+			
+			<a href="http://dayzepoch.com/wiki/index.php/Server_Installation_Instructions">Server Installation Instructions.</a><br/>
+			
+			<a href="http://dayzepoch.com/wiki/index.php/Server_Configuration_Instructions">Server Configuration Instructions.</a><br/>
+			
+			<br/>
+			<br/>
+			
+            <h6>Optional Custom Map Download links</h6>
+
+            <div class="alert alert-info">
+
+                <dl class="dl-horizontal">
+                    <dt><a href="http://www.icebreakr.info/lingor/download/">Lingor Island</a></dt>
+                    <dd>Required mods: <a href="http://play.withsix.com/mods/175-lingor">@lingor;</a>@DayZ_Epoch;</dd>
+
+                    <dt><a href="http://www.icebreakr.info/lingor/download/">Dingor Island</a></dt>
+                    <dd>Required mods: <a href="http://play.withsix.com/mods/97-dingor">@lingor;@dingor;</a>@DayZ_Epoch;</dd>
+					
+					<dt><a href="http://www.armaholic.com/page.php?id=22169">Fapovo Island</a></dt>
+                    <dd>Required mods: @fapovo;<a href="http://play.withsix.com/mods/175-lingor">@lingor;</a><a href="http://play.withsix.com/mods/218-panthera">@panthera;</a>@DayZ_Epoch;</dd>
+
+                    <dt><a href="http://www.icebreakr.info/isla-duala/download/">Isla Duala Island</a></dt>
+                    <dd>Required mods: <a href="http://play.withsix.com/mods/149-isla_duala">@duala;</a>@DayZ_Epoch;</dd>
+					
+					<dt><a href="http://dayzepoch.com/wiki/index.php/Custom_Map_Support">Taviana 1.0</a></dt>
+                    <dd>Required mods: <a href="http://play.withsix.com/mods/312-taviana">@taviana;</a>@DayZ_Epoch;</dd>
+					
+					<dt><a href="http://dayzepoch.com/wiki/index.php/Custom_Map_Support">Namalsk</a></dt>
+                    <dd>Required mods: <a href="http://play.withsix.com/mods/207-namalsk">@namalsk;</a>@DayZ_Epoch;</dd>
+					
+					<dt><a href="http://dayzepoch.com/wiki/index.php/Custom_Map_Support">Podagorsk</a></dt>
+                    <dd>Required mods: @FDF_Podagorsk;@DayZ_Epoch;</dd>
+					
+					<dt><a href="http://dayzepoch.com/wiki/index.php/Custom_Map_Support">Panthera</a></dt>
+                    <dd>Required mods: <a href="http://play.withsix.com/mods/218-panthera">@panthera;</a>@DayZ_Epoch;</dd>
+					
+					<dt><a href="http://dayzepoch.com/wiki/index.php/Custom_Map_Support">Sahrani</a></dt>
+                    <dd>Required mods: <a href="http://play.withsix.com/mods/444-caa1">@caa1;</a>@DayZ_Epoch;</dd>
+                </dl>
+
+            </div>
+			
+
+        </div>
+
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Copyright by American Day X <a href="https://github.com/KevelTV">KevelTV</a> и <a href="https://github.com/chasik2009">chasik2009</a></p><br>
-         <p class="copyright">*для особо одаренных ссылка разъяснение - не под этот мод, а под любой мод в общем.</p>
-       </footer>
+</div>
+
+
+</div>
+
+
+<div id="push"></div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <!-- tyt vs9ka9 xern9 -->
     </div>
+</div>
 
-    
 
-  </body>
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/bootstrap/js/jquery.js"></script>
+<script src="/bootstrap/js/bootstrap.js"></script>
+<script>
+    $('#myTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+</script>
+
+</body>
 </html>
